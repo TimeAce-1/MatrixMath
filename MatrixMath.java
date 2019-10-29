@@ -9,14 +9,14 @@ public class MatrixMath
 {
     // instance variables - replace the example below with your own
     private int[][] data;
-
+    
     /**
      * Constructor for objects of class MatrixMath
      */
     public MatrixMath(int[][] data)
     {
         // initialise instance variables
-       
+        
     }
 
     /**
@@ -26,10 +26,19 @@ public class MatrixMath
      * @return    int[]
      */
     public int[] rowSum()
-    {
-        return null;
-    }
-    
+    {   
+        
+        for (int i =0; i<data.length; i++)
+        {   int sum = 0;
+            for (int j = 0; i<data[0].length; j++)
+            {
+                sum += data[i][j];
+            }
+        sumRow[i] = sum;}
+        
+    return sumRow;
+}
+
         /**
      * Find the average of all the values in each row
      *
